@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>StudyGrid</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,6 +17,7 @@
       padding: 15px;
       text-align: center;
     }
+
     .navbar a {
       color: white;
       margin: 0 15px;
@@ -22,6 +25,11 @@
       font-weight: bold;
     }
 
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* MAIN CONTAINER */
     .container {
       max-width: 900px;
       margin: auto;
@@ -38,6 +46,7 @@
       font-size: 18px;
     }
 
+    /* CARD */
     .card {
       background: #ffffff;
       padding: 25px;
@@ -45,61 +54,50 @@
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       max-width: 600px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-.card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
-}
-a:hover {
-  color: #054da6;
-  text-decoration: underline;
-}
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    }
 
+    /* BUTTON */
     a.button {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: #0969da;
+      color: white;
       text-decoration: none;
-      color: #0969da;
+      border-radius: 6px;
       font-weight: bold;
+      transition: all 0.2s ease;
     }
-    a.button:hover {
-  color: #054da6;
-  text-decoration: underline;
-}
-      .footer {
-  margin-top: 60px;
-  padding: 20px;
-  background: #f6f8fa;
-  text-align: center;
-  color: #57606a;
-  font-size: 14px;
-}
-    a.button {
-  display: inline-block;
-  padding: 10px 16px;
-  border-radius: 6px;
-  background: #0969da;
-  color: white;
-  transition: all 0.2s ease;
-}
-a.button:hover {
-  background: #054da6;
-  color: white;              /* ✅ यह line ADD करनी है */
-  text-decoration: none;     /* ✅ यह line ADD करनी है */
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
 
+    a.button:hover {
+      background: #054da6;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      color: white;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    .footer {
+      margin-top: 60px;
+      padding: 20px;
+      background: #f6f8fa;
+      text-align: center;
+      color: #57606a;
+      font-size: 14px;
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- NAVIGATION BAR -->
+  <!-- NAVBAR -->
   <div class="navbar">
     <a href="index.html">Home</a>
     <a href="diploma.html">Diploma</a>
@@ -117,13 +115,11 @@ a.button:hover {
       <a class="button" href="diploma.html">View Notes</a>
     </div>
   </div>
-<!-- FOOTER -->
-<div class="footer">
-  <p>
-    © 2026 StudyGrid | All notes are shared for educational purposes only.
-  </p>
-</div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>© 2026 StudyGrid | All notes are shared for educational purposes only.</p>
+  </div>
 
 </body>
 </html>
-
